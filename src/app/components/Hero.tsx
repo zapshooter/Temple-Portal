@@ -6,7 +6,7 @@ const Hero = () => {
     return ( 
         <main className="relative w-full flex flex-col md:flex-row items-center justify-between py-[80px] md:py-[100px] px-[5%] bg bg-right-top bg-no-repeat bg-contain">
             <section className="w-full md:w-[50%] flex flex-col items-center md:items-start justify-center md:justify-start gap-3">
-                <p className="text-[14px] text-green font-bold special-font" data-aos="fade-down">"Embark on a Sacred Journey Across India</p>
+                <p className="text-[14px] text-green font-bold special-font" data-aos="fade-down">Embark on a Sacred Journey Across India</p>
                 <h1 className="text-4xl md:text-5xl xl:text-6xl text-blue font-extrabold w-full lg:w-[80%] text-center md:text-left" data-aos="fade-down">Discover   
                 <span className="relative w-full px-1">
                     <span className="relative z-10 w-full"> beauty</span>
