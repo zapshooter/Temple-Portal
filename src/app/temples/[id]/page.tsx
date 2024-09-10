@@ -5,7 +5,13 @@ import temples from '../../data/temples.json';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const TempleDetail = ({ params }) => {
+type TempleDetailParams = {
+  params: {
+    id: string;
+  };
+};
+
+const TempleDetail = ({ params }: TempleDetailParams) => {
   const { id } = params;
   const temple = temples.find((temple) => temple.id === id);
 
