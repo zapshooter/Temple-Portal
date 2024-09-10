@@ -6,7 +6,7 @@ const Book = () => {
         <main className="px-[5%] py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-6" id="bookings">
             <section className="grid grid-cols-1 gap-4">
                 <p className="text-[16px] text-litegrey font-bold text-center md:text-left special-font" data-aos="fade-down">Easy and Fast</p>
-                <h1 className="text-litedark text-3xl md:text-5xl text-center md:text-left font-extrabold w-full md:max-w-[500px]" data-aos="fade-down">Book Your Next Trip in 3 Easy Steps</h1>
+                <h1 className="text-litedark text-3xl md:text-5xl text-center md:text-left font-extrabold w-full md:max-w-[500px]" data-aos="fade-down">Unveil the Pathways to the Divine</h1>
 
                 <div className="flex items-center gap-2 special-font">
                     <div>
@@ -14,7 +14,7 @@ const Book = () => {
                     </div>
                     <div>
                         <h2 className="text-[16px] text-litegrey font-bold" data-aos="fade-down">Choose Destination</h2>
-                        <p className="text-[16px] text-litegrey font-normal max-w-[300px]" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        {/* <p className="text-[16px] text-litegrey font-normal max-w-[300px]" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p> */}
                     </div>
                 </div>
 
@@ -23,8 +23,8 @@ const Book = () => {
                         <Image src="/img/make.png" width={40} height={40} alt="img"  data-aos="fade-down"/>
                     </div>
                     <div>
-                        <h2 className="text-[16px] text-litegrey font-bold" data-aos="fade-down">Make Payment</h2>
-                        <p className="text-[16px] text-litegrey font-normal max-w-[300px]" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        <h2 className="text-[16px] text-litegrey font-bold" data-aos="fade-down">Learn more about the place</h2>
+                        {/* <p className="text-[16px] text-litegrey font-normal max-w-[300px]" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p> */}
                     </div>
                 </div>
 
@@ -33,8 +33,8 @@ const Book = () => {
                         <Image src="/img/reach.png" width={40} height={40} alt="img"  data-aos="fade-down"/>
                     </div>
                     <div>
-                        <h2 className="text-[16px] text-litegrey font-bold" data-aos="fade-down">Reach Airport on Selected Date</h2>
-                        <p className="text-[16px] text-litegrey font-normal max-w-[300px]" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        <h2 className="text-[16px] text-litegrey font-bold" data-aos="fade-down">Reach Destination on the desired date</h2>
+                        {/* <p className="text-[16px] text-litegrey font-normal max-w-[300px]" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p> */}
                     </div>
                 </div>
             </section>
@@ -42,14 +42,14 @@ const Book = () => {
             <section className="relative mt-20 md-mt-0 special-font">
                 <div className=" p-4 rounded-2xl shadow-md w-[90%] md:max-w-[70%] grid grid-cols-1 gap-4 relative z-10 bg-white" data-aos="zoom-in">
                     <div className="w-full">
-                        <Image src="/img/trip.jpg" width={300} height={300} alt="img" className="w-full" />
+                        <Image src="/img/temple.jpg" width={300} height={300} alt="img" className="w-full" />
                     </div>
 
                     <div className="grid gap-2 relative bg-white w-full">
-                        <h2 className="text-litedark text-[18px] font-bold">Trip To Greece</h2>
+                        <h2 className="text-litedark text-[18px] font-bold">Trip To Ayodhya</h2>
                         <div className="flex items-center gap-2 text-[16px] text-litegrey">
                             <p>14-29 June</p>
-                            <p>by Robbin Joseph</p>
+                            <p>by Robbin utappa</p>
                         </div>
 
                         <div className="flex items-center gap-4">
@@ -80,7 +80,7 @@ const Book = () => {
                                 </div>
                                 <div>
                                     <p className="text-[14px] text-litegrey">Ongoing</p>
-                                    <h2 className="text-[18px] text-litedark font-bold">Trip To Rome</h2>
+                                    <h2 className="text-[18px] text-litedark font-bold">Trip To Neelkanth</h2>
 
                                     <div>
                                         <p className="text-[14px] text-litedark font-bold">

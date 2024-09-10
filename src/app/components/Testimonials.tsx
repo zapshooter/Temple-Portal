@@ -15,23 +15,23 @@ const Testimonials = () => {
     const testimonialsData: TestimonialData[] = [
         {
             img: "/img/user1.png",
-            review: "“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
+            review: "“The spiritual energy at Kashi Vishwanath Temple was overwhelming. The evening Ganga Aarti was a highlight, leaving me with a profound sense of peace.”",
             name: "Mike taylor",
-            company: "Lahore, Pakistan",
+            company: "Leicester, UK",
 
         },
         {
             img: "/img/user2.png",
-            review: "“This service is a game-changer! I was skeptical at first, but after trying it, I'm hooked. The results were instant, and I couldn't be happier.”",
+            review: "“The Meenakshi Temple in Madurai left me in awe with its stunning architecture. The intricate carvings and vibrant colors of the gopurams.”",
             name: "Chris Thomas",
-            company: "CEO of Red Button",
+            company: "Birmingham",
 
         },
         {
             img: "/img/user3.png",
-            review: "“The customer support is also top-notch. They were quick to respond and helped me with any questions I had.”",
+            review: "“The Golden Temple’s serene atmosphere and the sight of its reflection in the Amrit Sarovar are unforgettable. It’s a place of peace and beauty.”",
             name: "John Smith",
-            company: "CEO of Energize Your Life Co",
+            company: "Nigeria, Africa",
 
         }
     ]
@@ -65,8 +65,8 @@ const Testimonials = () => {
     return ( 
         <main className="px-[5%] py-[100px] grid grid-cols-1 md:grid-cols-2 gap-6">
             <section className="grid gap-4">
-                <p className="text-[18px] text-litegrey font-semibold special-font text-center md:text-left" data-aos="fade-down">Testimonials</p>
-                <h1 className="text-3xl md:text-5xl font-extrabold w-full md:max-w-[70%] text-center md:text-left" data-aos="fade-down">What People Say About Us.</h1>
+                <p className="text-[18px] text-litegrey font-semibold special-font text-center md:text-left" data-aos="fade-down"></p>
+                <h1 className="text-3xl md:text-5xl font-extrabold w-full md:max-w-[70%] text-center md:text-left" data-aos="fade-down">Visitors Reflections</h1>
 
                 <div className="flex items-center gap-2 justify-center md:justify-start" data-aos="slide-right">
                     <GoDotFill className={`text-2xl text-litedark ${currentIndex === 0 ? 'text-litedark' : 'text-litegrey'} cursor-pointer`} onClick={() => handleDotClick(0)}/>

@@ -10,31 +10,31 @@ const Category = () => {
       const category : Category[] = [
         {
             img: "/img/weather.png",
-            header: "Calculated Weather",
-            subheader: "Built Wicket longer admire do barton vanity itself do in it",
+            header: "Explore Temples",
+            subheader: "Visit and discover ancient, spiritual, and architectural wonders of religious significance.",
         },
         {
             img: "/img/flight.png",
-            header: "Best Flights",
-            subheader: "Engrossed listening. Park gate sell they west hard for the",
+            header: "Plan your Pilgrimage",
+            subheader: "Organize your sacred journey, choosing destinations, accommodations, rituals, and spiritual practices.",
         },
         {
             img: "/img/event.png",
-            header: "Best Flights",
-            subheader: "Barton vanity itself do in it. Prefered to men it engrossed listening",
+            header: "Top Destinations",
+            subheader: "Connect and enrich your soul while learning sutras along the way.",
         },
         {
             img: "/img/settings.png",
-            header: "Customization",
-            subheader: "We deliver outsourced aviation services for military customers",
+            header: "Secret Places",
+            subheader: "Hidden or lesser-known sacred sites with unique spiritual significance and serene atmospheres.",
         },
 
       ]
     return (
         <main className="relative w-full py-[100px] px-[5%] grid grid-cols-1 gap-4" id="category">
             <section className="flex flex-col items-center text-center gap-4">
-                <p className="text-[18px] text-litegrey font-bold special-font" data-aos="fade-down">CATEGORY</p>
-                <h1 className="text-3xl md:text-5xl font-bold" data-aos="fade-down">We Offer Best Services</h1>
+                <p className="text-[18px] text-litegrey font-bold special-font" data-aos="fade-down">Explore</p>
+                <h1 className="text-3xl md:text-5xl font-bold" data-aos="fade-down">Get in Touch with God</h1>
             </section>
 
             <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center items-stretch gap-6 lg:gap-10 special-font">

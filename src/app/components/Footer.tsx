@@ -8,8 +8,8 @@ const Footer = () => {
             <section className="" data-aos="fade-down">
                 <div className="flex justify-between flex-wrap gap-2" >
                     <div className="flex flex-col gap-2 mb-5 md:mb-0 w-full md:w-auto items-center md:items-start justify-center md:justify-start">
-                        <Image src="/img/footer-logo.png" width={100} height={100} alt="logo" />
-                        <p className="text-[12px] text-litegrey font-semibold w-full md:max-w-[200px] text-center md:text-left">Book your trip in minute, get full Control for much longer. </p>
+                        <Image src="/img/31530356_bird_2.svg" width={100} height={100} alt="logo" />
+                        <p className="text-[12px] text-litegrey font-semibold w-full md:max-w-[200px] text-center md:text-left">Be Part of a Growing Community of Devotees and Travelers </p>
                     </div>
 
                     <div className="grid gap-4">
@@ -36,9 +36,9 @@ const Footer = () => {
                         <h1 className="text[18px] text-litedark font-extrabold">More</h1>
 
                         <div className="text-[15px] text-litegrey font-semibold flex flex-col gap-2">
-                            <a href="" className="hover:text-orange transition delay-200">Airlinefees</a>
-                            <a href="" className="hover:text-orange transition delay-200">Airline</a>
-                            <a href="" className="hover:text-orange transition delay-200">Low fare tips</a>
+                            <a href="" className="hover:text-orange transition delay-200">FAQ</a>
+                            <a href="" className="hover:text-orange transition delay-200">Places</a>
+                            <a href="" className="hover:text-orange transition delay-200">Places to go too</a>
                         </div>
                     </div>
 
@@ -71,7 +71,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <p className="text-[14px] text-litegrey text-center font-normal mt-5 ">All rights reserved@jadoo.co</p>
+                <p className="text-[14px] text-litegrey text-center font-normal mt-5 ">All rights reserved Debhoomiconsulting</p>
             </section>
         </main>
     );

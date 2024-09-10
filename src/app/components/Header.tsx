@@ -1,3 +1,6 @@
+'use client';
+
+
 import Link from "next/link";
 import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
@@ -44,26 +47,30 @@ const Header = () => {
     return ( 
         <nav className={`py-5 px-[5%] top-0 w-full fixed flex items-center justify-between z-20 ${headerBackground} special-font`}>
             <Link href="/" className="w-[80px]">
-                <Image src="/img/hero-logo.png" width={80} height={80} alt="logo" className="w-full" loading="eager"/>
+                <Image src="/img/logoo.png" width={80} height={80} alt="logo" className="w-full" loading="eager"/>
             </Link>
 
             <section className={`${isMenuOpen ? 'left-0' : 'left-[-100%]'} nav-transition md:transition-none absolute top-[68px] md:top-0 md:left-0 md:relative md:flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between gap-4 lg:gap-8 text-[16px] text-litedark font-bold bg-orange md:bg-transparent pl-[5%] md:pl-auto py-10 md:py-0 w-full md:w-auto`}>
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between gap-4 lg:gap-8">
                     <a href="#destination" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>Destinations</a>
-                    <a href="#" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>Hotels</a>
-                    <a href="#" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>Flights</a>
-                    <a href="#bookings" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>Bookings</a>
+                    <Link href="/temples" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>
+            Top 100 Temples
+          </Link>
+                    <Link href="/traveltips" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>
+                      Travel Tips
+                    </Link>
+                    <a href="#bookings" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>Treks</a>
                 </div>
 
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between gap-4 lg:gap-8 mt-4 md:mt-0">
-                    <a href="#" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>Login</a>
-                    <a href="#" className="px-4 py-1 border border-litedark rounded-[4px] hover:bg-litedark hover:text-white transition delay-200" onClick={toggleMenu}>Sign up</a>
+                    {/* <a href="#" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>Login</a>
+                    <a href="#" className="px-4 py-1 border border-litedark rounded-[4px] hover:bg-litedark hover:text-white transition delay-200" onClick={toggleMenu}>Sign up</a> */}
 
-                    <select name="" id="" className="bg-transparent border-none outline-none">
+                    {/* <select name="" id="" className="bg-transparent border-none outline-none">
                         <option value="">EN</option>
                         <option value="">AR</option>
                         <option value="">SP</option>
-                    </select>
+                    </select> */}
                 </div>
             </section>
 

@@ -12,31 +12,31 @@ const Destination = () => {
 
     const destination: Destination[] = [
         {
-            img: "/img/rome.png",
-            location: "Rome, Italy",
-            amount: "$5.42k",
-            days: "10 Days Trip",
+            img: "/img/golden-temp.jpg",
+            location: "Amritsar",
+            amount: "Golden Temple",
+            days: "10 Days",
             sideImg: ""
         },
         {
-            img: "/img/london.jpg",
-            location: "London, UK",
-            amount: "$4.2k",
-            days: "12 Days Trip",
+            img: "/img/kedarnath.jpg",
+            location: "Uttarakhand",
+            amount: "Kedarnath Temple",
+            days: "12 Days",
             sideImg: ""
         },
         {
-            img: "/img/europe.png",
-            location: "Full Europe",
-            amount: "$15k",
-            days: "28 Days Trip",
+            img: "/img/download.jpeg",
+            location: "Uttarakhand",
+            amount: "Badrinath Temmple",
+            days: "28 Days",
             sideImg: "/img/Decore2.png"
         },
     ]
     return (
         <main className="relative w-full py-[80px] px-[5%] grid grid-cols-1 gap-6" id="destination">
             <section className="flex flex-col items-center text-center gap-4">
-                <p className="text-[18px] text-litegrey font-bold special-font" data-aos="fade-down">Top Selling</p>
+                <p className="text-[18px] text-litegrey font-bold special-font" data-aos="fade-down">Featured</p>
                 <h1 className="text-3xl md:text-5xl font-bold" data-aos="fade-down">Top Destinations</h1>
             </section>
 

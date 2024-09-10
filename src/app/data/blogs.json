@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "How to Plan Gangotri Yamunotri Yatra from Delhi",
+      "excerpt": "Embarking on a pilgrimage to Gangotri and Yamunotri, two sacred sites nestled in the Himalayas, is a spiritually enriching journey for many devout Hindus...",
+      "slug": "gangotri-yamunotri-yatra",
+      "image": "/img/kedarnath.jpg",
+      "introduction": "Gangotri and Yamunotri are not just places of pilgrimage; they are a journey through the very essence of the Himalayas and the source of the two most sacred rivers in India...",
+      "content": [
+        {
+          "heading": "The Journey Begins",
+          "text": "Starting your yatra from Delhi, you can choose between a few different travel options...",
+          "image": "/images/journey-begins.jpg"
+        },
+        {
+          "heading": "Important Tips",
+          "text": "Make sure to carry warm clothing, even in summer, as temperatures can drop significantly at high altitudes...",
+          "image": "/images/tips.jpg"
+        }
+      ],
+      "author": "John Doe",
+      "date": "2024-09-10"
+    },
+    {
+      "id": 2,
+      "title": "How to Plan Badrinath Kedarnath Dham Yatra from Delhi",
+      "excerpt": "Embarking on the Kedarnath Badrinath Yatra from Delhi is a soul-stirring pilgrimage that offers a blend of spirituality, adventure, and natural beauty...",
+      "slug": "badrinath-kedarnath-dham-yatra",
+      "image": "/img/ranganathaswamy1.jpg",
+      "introduction": "The twin temples of Badrinath and Kedarnath stand as pillars of spirituality in the rugged landscape of the Himalayas...",
+      "content": [
+        {
+          "heading": "Why Visit These Dhams?",
+          "text": "Badrinath and Kedarnath are two of the most revered destinations in the Char Dham circuit. Each temple has its own significance...",
+          "image": "/images/dhams.jpg"
+        }
+      ],
+      "author": "Jane Smith",
+      "date": "2024-09-15"
+    }
+  ]
+  
