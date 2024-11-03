@@ -12,7 +12,7 @@ const OriginOfHinduismPage = () => {
     about: (
       <div>
         <h2>About Hinduism</h2>
-        <p>Hinduism is the world's oldest known religion, with a history of more than 4,000 years, and is considered one of the most complex and diverse religious traditions.</p>
+        <p>Hinduism is the worlds oldest known religion, with a history of more than 4,000 years, and is considered one of the most complex and diverse religious traditions.</p>
         <p>The origins of Hinduism are deeply rooted in the ancient Indus Valley civilization, which flourished around 2500 BCE in what is now Pakistan and northwest India. The spiritual practices, rituals, and beliefs of early Hindus evolved over millennia, absorbing influences from various cultures and civilizations.</p>
         <p>Hinduism is not just a religion but a way of life, encompassing various philosophies, rituals, and customs. It is characterized by a belief in a supreme reality, Brahman, from which all existence arises, and acknowledges a multitude of deities representing different aspects of the divine.</p>
       </div>
@@ -29,7 +29,7 @@ const OriginOfHinduismPage = () => {
         <h2>Beliefs in Hinduism</h2>
         <p>Hinduism encompasses a wide array of beliefs, each contributing to its diversity. Here are some core concepts:</p>
         <ul>
-          <li><strong>Dharma</strong>: The principle of cosmic order and duty, which governs an individual's behavior.</li>
+          <li><strong>Dharma</strong>: The principle of cosmic order and duty, which governs an individuals behavior.</li>
           <li><strong>Karma</strong>: The law of cause and effect, where every action has consequences in this life or the next.</li>
           <li><strong>Moksha</strong>: The ultimate goal of liberation from the cycle of rebirth and attaining union with Brahman.</li>
           <li><strong>Samsara</strong>: The cycle of death and rebirth that every soul goes through until achieving Moksha.</li>
@@ -77,7 +77,7 @@ const OriginOfHinduismPage = () => {
         </div>
         <div className="overview">
           <h1>Origin of Hinduism</h1>
-          <p>Hinduism is one of the world's most ancient religions, with roots extending back to the Indus Valley civilization. Its practices and beliefs have evolved over thousands of years, influenced by various cultural and historical contexts.</p>
+          <p>Hinduism is one of the worlds most ancient religions, with roots extending back to the Indus Valley civilization. Its practices and beliefs have evolved over thousands of years, influenced by various cultural and historical contexts.</p>
           <div className="overview-details">
             <ul>
               <li><strong>Belief System:</strong> Polytheistic</li>
