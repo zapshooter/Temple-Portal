@@ -1,5 +1,7 @@
 'use client';
 
+import Image from "next/image";
+
 const ReligiousTextsPage = () => {
   return (
     <div className="container">
@@ -63,9 +65,9 @@ const ReligiousTextsPage = () => {
       <section className="gallery">
         <h2>Gallery</h2>
         <div className="image-grid">
-          <img src="/img/text1.jpg" alt="Kumbh Mela Scene" />
-          <img src="/img/text2.jpg" alt="Holy Dip at Kumbh Mela" />
-          <img src="/img/text3.jpg" alt="Procession of Saints" />
+          <Image src="/img/text1.jpg" alt="Kumbh Mela Scene" />
+          <Image src="/img/text2.jpg" alt="Holy Dip at Kumbh Mela" />
+          <Image src="/img/text3.jpg" alt="Procession of Saints" />
         </div>
       </section>
 

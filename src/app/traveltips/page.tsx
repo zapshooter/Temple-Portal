@@ -5,6 +5,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import blogs from '../data/blogs.json'; // Import your blogs data
+import Image from 'next/image';
 
 const Blogs = () => {
   return (
@@ -19,7 +20,7 @@ const Blogs = () => {
       <div className="blog-list">
         {blogs.map((blog) => (
           <div key={blog.slug} className="blog-card">
-            <img src={blog.image} alt={blog.title} className="blog-image" />
+            <Image src={blog.image} alt={blog.title} className="blog-image" />
             <div className="blog-content">
               <h2>{blog.title}</h2>
               <p>{blog.excerpt}</p>

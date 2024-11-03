@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const OriginOfHinduismPage = () => {
@@ -14,7 +15,7 @@ const OriginOfHinduismPage = () => {
     about: (
       <div>
         <h2>About Hinduism</h2>
-        <p>Hinduism is the world's oldest known religion, with a history of more than 4,000 years...</p>
+        <p>Hinduism is the worlds oldest known religion, with a history of more than 4,000 years...</p>
       </div>
     ),
     history: (
@@ -28,7 +29,7 @@ const OriginOfHinduismPage = () => {
         <h2>Beliefs in Hinduism</h2>
         <p>Hinduism encompasses a wide array of beliefs...</p>
         <ul>
-          <li><strong>Dharma</strong>: The principle of cosmic order and duty, which governs an individual's behavior.</li>
+          <li><strong>Dharma</strong>: The principle of cosmic order and duty, which governs an individuals behavior.</li>
           <li><strong>Karma</strong>: The law of cause and effect, where every action has consequences in this life or the next.</li>
           <li><strong>Moksha</strong>: The ultimate goal of liberation from the cycle of rebirth and attaining union with Brahman.</li>
           <li><strong>Samsara</strong>: The cycle of death and rebirth that every soul goes through until achieving Moksha.</li>
@@ -72,11 +73,11 @@ const OriginOfHinduismPage = () => {
 
       <div className="main-section">
         <div className="image-container">
-          <img src="/img/kedarnath.jpg" alt="Hinduism" />
+          <Image src="/img/kedarnath.jpg" alt="Hinduism" />
         </div>
         <div className="overview">
           <h1>Origin of Hinduism</h1>
-          <p>Hinduism is one of the world's most ancient religions...</p>
+          <p>Hinduism is one of the worlds most ancient religions...</p>
           <div className="overview-details">
             <ul>
               <li><strong>Belief System:</strong> Polytheistic</li>
