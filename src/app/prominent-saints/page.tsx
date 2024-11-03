@@ -35,7 +35,6 @@ const ProminentSaintsPage = () => {
       <style jsx>{`
         .container {
           padding: 40px;
-        
           color: #333;
         }
 
@@ -43,15 +42,13 @@ const ProminentSaintsPage = () => {
           font-size: 3rem;
           text-align: center;
           color: #e65100; /* Orange color for title */
-
-          text-align: center;
           margin-bottom: 40px;
           margin-top: 50px;
         }
 
         .saintsGrid {
-          display: flex;
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Three cards in a row */
           gap: 20px;
           justify-content: center;
         }
@@ -61,7 +58,6 @@ const ProminentSaintsPage = () => {
           border: 1px solid #e65100;
           padding: 20px;
           border-radius: 8px;
-          max-width: 300px;
           text-align: center;
         }
 
@@ -98,6 +94,12 @@ const ProminentSaintsPage = () => {
           padding: 5px;
           margin: 5px 0;
           border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+          .saintsGrid {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* One card per row on small screens */
+          }
         }
       `}</style>
     </div>

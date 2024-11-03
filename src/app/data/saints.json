@@ -1,21 +1,74 @@
 [
-    {
+  {
       "id": "1",
       "name": "Swami Vivekananda",
-      "profileImage": "/images/swami.jpg",
+      "profileImage": "/img/swami.jpg",
       "title": "The Monk Who Brought Hinduism to the West",
       "description": "Swami Vivekananda was a key figure in introducing Indian philosophies to the Western world.",
       "bio": "Swami Vivekananda, a disciple of Ramakrishna, is known for his iconic speech at the Parliament of the World's Religions in 1893...",
       "highlights": ["Unity of Religions", "Vedanta Philosophy", "Youth Inspiration"]
-    },
-    {
+  },
+  {
       "id": "2",
       "name": "Adi Shankaracharya",
-      "profileImage": "/images/shankar.jpg",
+      "profileImage": "/img/shankar.jpg",
       "title": "Reviver of Hinduism in India",
       "description": "Adi Shankaracharya was a philosopher and theologian who consolidated the doctrine of Advaita Vedanta.",
       "bio": "Adi Shankaracharya founded four mathas (monasteries) that played a crucial role in the historical development of Hinduism...",
       "highlights": ["Advaita Philosophy", "Revival of Hinduism"]
-    }
-  ]
-  
+  },
+  {
+      "id": "3",
+      "name": "Ramakrishna Paramahamsa",
+      "profileImage": "/img/ramakrishna.jpg",
+      "title": "The Mystic Saint of Bengal",
+      "description": "Ramakrishna was a mystic and saint who emphasized that all religions lead to the same truth.",
+      "bio": "Ramakrishna Paramahamsa, known for his deep spiritual insights and mystical experiences, taught that God could be realized through all paths...",
+      "highlights": ["Religious Harmony", "Divine Experiences", "Teachings on Devotion"]
+  },
+  {
+      "id": "4",
+      "name": "Sri Aurobindo",
+      "profileImage": "/img/aurobindo.jpg",
+      "title": "The Philosopher and Yogi",
+      "description": "Sri Aurobindo was a philosopher, yogi, and nationalist who founded Integral Yoga.",
+      "bio": "Sri Aurobindo’s philosophy of Integral Yoga aims at the transformation of human consciousness and establishing a spiritual society...",
+      "highlights": ["Integral Yoga", "Spiritual Evolution", "Nationalism"]
+  },
+  {
+      "id": "5",
+      "name": "Sant Kabir Das",
+      "profileImage": "/img/kabir.jpg",
+      "title": "The Poet-Saint of Bhakti Movement",
+      "description": "Kabir Das was a poet-saint whose verses challenged the orthodoxies of both Hinduism and Islam.",
+      "bio": "Kabir Das, with his simple yet profound poetry, advocated for a direct relationship with the Divine beyond rituals and dogmas...",
+      "highlights": ["Bhakti Poetry", "Social Reform", "Unity of God"]
+  },
+  {
+      "id": "6",
+      "name": "Guru Nanak Dev",
+      "profileImage": "/img/nanak.jpg",
+      "title": "The Founder of Sikhism",
+      "description": "Guru Nanak was a spiritual teacher and the founder of Sikhism, known for his teachings on equality and devotion.",
+      "bio": "Guru Nanak Dev’s teachings focused on devotion to God, equality, and community service, laying the foundation of Sikhism...",
+      "highlights": ["Equality and Compassion", "Community Service", "Teachings on Oneness"]
+  },
+  {
+    "id": "7",
+    "name": "Mirabai",
+    "profileImage": "/img/mirabai.jpg",
+    "title": "The Devotee of Lord Krishna",
+    "description": "Mirabai was a 16th-century poetess and devotee of Lord Krishna, known for her bhakti and devotional songs.",
+    "bio": "Mirabai, a Rajput princess, abandoned royal life to dedicate herself entirely to Lord Krishna. Her poems and bhajans, filled with love and devotion, continue to inspire millions.",
+    "highlights": ["Bhakti for Krishna", "Devotional Poetry", "Spiritual Songs"]
+},
+{
+    "id": "8",
+    "name": "Tulsidas",
+    "profileImage": "/img/tulsidas.jpg",
+    "title": "Author of the Ramcharitmanas",
+    "description": "Tulsidas was a poet-saint and the author of the Ramcharitmanas, an epic retelling of the Ramayana in Hindi.",
+    "bio": "Tulsidas dedicated his life to Lord Rama and composed the Ramcharitmanas, bringing the story of Rama closer to the common people through his inspiring verses.",
+    "highlights": ["Ramcharitmanas", "Devotion to Rama", "Influence on Hindi Literature"]
+}
+]

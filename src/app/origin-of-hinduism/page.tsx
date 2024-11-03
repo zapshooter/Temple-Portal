@@ -3,28 +3,30 @@
 import React, { useState } from 'react';
 
 const OriginOfHinduismPage = () => {
-  const [activeTab, setActiveTab] = useState('about');
+  // Define a union type for the tab names
+  type TabName = 'about' | 'history' | 'beliefs' | 'festivals' | 'scriptures' | 'culturalImpact';
+
+  // Set activeTab state with the TabName type
+  const [activeTab, setActiveTab] = useState<TabName>('about');
 
   // Tab Content
-  const tabContent = {
+  const tabContent: Record<TabName, JSX.Element> = {
     about: (
       <div>
         <h2>About Hinduism</h2>
-        <p>Hinduism is the world's oldest known religion, with a history of more than 4,000 years. It is a way of life rather than a single doctrine, encompassing a vast array of practices, beliefs, and philosophies.</p>
-        <p>The term "Hindu" itself is derived from the River Sindhu (Indus), and was used by foreigners to describe the people of the Indian subcontinent. Hinduism is a polytheistic religion, although its underlying philosophy acknowledges a single supreme reality known as Brahman.</p>
+        <p>Hinduism is the world's oldest known religion, with a history of more than 4,000 years...</p>
       </div>
     ),
     history: (
       <div>
         <h2>History of Hinduism</h2>
-        <p>The history of Hinduism spans several millennia. The roots of Hinduism date back to the Indus Valley Civilization (circa 1500 BCE). The Vedic period, which followed, laid the foundation for much of what we now consider classical Hinduism, with the compilation of the Vedas, the oldest religious texts in existence.</p>
-        <p>Over time, Hinduism evolved through different periods, including the Upanishadic era, the classical age, and the medieval period, each contributing to its rich philosophical and spiritual heritage. Hinduism has absorbed and assimilated countless influences, making it one of the most diverse religions in the world.</p>
+        <p>The history of Hinduism spans several millennia...</p>
       </div>
     ),
     beliefs: (
       <div>
         <h2>Beliefs in Hinduism</h2>
-        <p>Hinduism encompasses a wide array of beliefs, but several core concepts are central to its philosophy:</p>
+        <p>Hinduism encompasses a wide array of beliefs...</p>
         <ul>
           <li><strong>Dharma</strong>: The principle of cosmic order and duty, which governs an individual's behavior.</li>
           <li><strong>Karma</strong>: The law of cause and effect, where every action has consequences in this life or the next.</li>
@@ -36,7 +38,6 @@ const OriginOfHinduismPage = () => {
     festivals: (
       <div>
         <h2>Festivals of Hinduism</h2>
-        <p>Hinduism is known for its colorful and diverse festivals, many of which are celebrated with great fervor across India and the world:</p>
         <ul>
           <li><strong>Diwali</strong>: The festival of lights, celebrating the return of Lord Rama to Ayodhya after defeating Ravana.</li>
           <li><strong>Holi</strong>: The festival of colors, celebrating the arrival of spring and the victory of good over evil.</li>
@@ -48,20 +49,18 @@ const OriginOfHinduismPage = () => {
     scriptures: (
       <div>
         <h2>Key Scriptures in Hinduism</h2>
-        <p>Hinduism has a rich and diverse body of scriptures, with the Vedas being the oldest and most revered:</p>
         <ul>
-          <li><strong>Vedas</strong>: The four Vedas (Rig, Sama, Yajur, Atharva) are considered the oldest sacred texts, consisting of hymns, prayers, and rituals.</li>
+          <li><strong>Vedas</strong>: The four Vedas (Rig, Sama, Yajur, Atharva) are considered the oldest sacred texts.</li>
           <li><strong>Upanishads</strong>: Philosophical texts that explore the nature of reality, the self, and the ultimate truth.</li>
-          <li><strong>Bhagavad Gita</strong>: A key philosophical text that is part of the Mahabharata, where Lord Krishna imparts spiritual wisdom to Arjuna.</li>
-          <li><strong>Ramayana</strong>: The epic story of Lord Rama and his quest to rescue Sita, symbolizing dharma, duty, and righteousness.</li>
+          <li><strong>Bhagavad Gita</strong>: A key philosophical text that is part of the Mahabharata.</li>
+          <li><strong>Ramayana</strong>: The epic story of Lord Rama symbolizing dharma and righteousness.</li>
         </ul>
       </div>
     ),
     culturalImpact: (
       <div>
         <h2>Cultural Impact of Hinduism</h2>
-        <p>Hinduism has had a profound influence on Indian art, literature, architecture, and philosophy. The religion has inspired some of the world’s greatest monuments, such as the temples of Khajuraho, the Brihadeeswarar Temple, and the sculptures of Ellora and Ajanta caves.</p>
-        <p>Hindu philosophy, with its concepts of yoga and meditation, has also gained global recognition, shaping modern spiritual practices and self-help movements across the world.</p>
+        <p>Hinduism has had a profound influence on Indian art, literature, architecture, and philosophy...</p>
       </div>
     )
   };
@@ -77,7 +76,7 @@ const OriginOfHinduismPage = () => {
         </div>
         <div className="overview">
           <h1>Origin of Hinduism</h1>
-          <p>Hinduism is one of the world's most ancient religions, with roots going back over 4,000 years.</p>
+          <p>Hinduism is one of the world's most ancient religions...</p>
           <div className="overview-details">
             <ul>
               <li><strong>Belief System:</strong> Polytheistic</li>
@@ -112,45 +111,73 @@ const OriginOfHinduismPage = () => {
           margin: 50px auto;
         }
 
-        .heading{
+        .heading {
           text-align: center;
           margin-bottom: 40px;
           font-size: 2.5rem;
         }
+
         .main-section {
           display: flex;
           gap: 20px;
+          align-items: start;
         }
+
         .image-container img {
           width: 400px;
           height: auto;
           border-radius: 10px;
         }
+
         .overview {
           flex: 1;
         }
+
         .overview-details ul {
           list-style: none;
           padding: 0;
+          margin: 0;
         }
+
         .overview-details ul li {
           margin-bottom: 10px;
         }
+
         .tabs {
           display: flex;
           margin: 20px 0;
           border-bottom: 2px solid #ccc;
         }
+
         .tab {
           padding: 10px 20px;
           cursor: pointer;
           border-bottom: 2px solid transparent;
+          transition: all 0.3s;
         }
+
         .tab.active {
           border-bottom: 2px solid #f39c12;
         }
+
         .content-section {
           margin-top: 20px;
+          font-size: 1.1rem;
+          line-height: 1.6;
+        }
+
+        h2 {
+          margin-top: 0;
+          color: #f39c12;
+        }
+
+        ul {
+          padding-left: 20px;
+          list-style-type: disc;
+        }
+
+        ul li {
+          margin-bottom: 5px;
         }
       `}</style>
     </div>
