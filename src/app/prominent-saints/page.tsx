@@ -100,7 +100,6 @@ const ProminentSaintsPage = () => {
           .saintsGrid {
             grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* One card per row on small screens */
           }
-        }
       `}</style>
     </div>
   );
