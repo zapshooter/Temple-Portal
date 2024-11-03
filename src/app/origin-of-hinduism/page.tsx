@@ -4,32 +4,32 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 const OriginOfHinduismPage = () => {
-  // Define a union type for the tab names
   type TabName = 'about' | 'history' | 'beliefs' | 'festivals' | 'scriptures' | 'culturalImpact';
 
-  // Set activeTab state with the TabName type
   const [activeTab, setActiveTab] = useState<TabName>('about');
 
-  // Tab Content
   const tabContent: Record<TabName, JSX.Element> = {
     about: (
       <div>
         <h2>About Hinduism</h2>
-        <p>Hinduism is the worlds oldest known religion, with a history of more than 4,000 years...</p>
+        <p>Hinduism is the world's oldest known religion, with a history of more than 4,000 years, and is considered one of the most complex and diverse religious traditions.</p>
+        <p>The origins of Hinduism are deeply rooted in the ancient Indus Valley civilization, which flourished around 2500 BCE in what is now Pakistan and northwest India. The spiritual practices, rituals, and beliefs of early Hindus evolved over millennia, absorbing influences from various cultures and civilizations.</p>
+        <p>Hinduism is not just a religion but a way of life, encompassing various philosophies, rituals, and customs. It is characterized by a belief in a supreme reality, Brahman, from which all existence arises, and acknowledges a multitude of deities representing different aspects of the divine.</p>
       </div>
     ),
     history: (
       <div>
         <h2>History of Hinduism</h2>
-        <p>The history of Hinduism spans several millennia...</p>
+        <p>The history of Hinduism spans several millennia, with its origins traced back to the ancient Indus Valley civilization (circa 2500–1500 BCE). As the Aryans migrated into the Indian subcontinent, they brought with them the Vedas, a collection of hymns and religious texts that form the foundation of Hindu philosophy and rituals.</p>
+        <p>Over time, various sects and philosophies emerged, including Vedanta, Yoga, and Samkhya, contributing to the rich tapestry of Hindu thought. Major texts like the Mahabharata and the Ramayana, composed between 400 BCE and 400 CE, also played a significant role in shaping Hindu beliefs and practices.</p>
       </div>
     ),
     beliefs: (
       <div>
         <h2>Beliefs in Hinduism</h2>
-        <p>Hinduism encompasses a wide array of beliefs...</p>
+        <p>Hinduism encompasses a wide array of beliefs, each contributing to its diversity. Here are some core concepts:</p>
         <ul>
-          <li><strong>Dharma</strong>: The principle of cosmic order and duty, which governs an individuals behavior.</li>
+          <li><strong>Dharma</strong>: The principle of cosmic order and duty, which governs an individual's behavior.</li>
           <li><strong>Karma</strong>: The law of cause and effect, where every action has consequences in this life or the next.</li>
           <li><strong>Moksha</strong>: The ultimate goal of liberation from the cycle of rebirth and attaining union with Brahman.</li>
           <li><strong>Samsara</strong>: The cycle of death and rebirth that every soul goes through until achieving Moksha.</li>
@@ -61,23 +61,23 @@ const OriginOfHinduismPage = () => {
     culturalImpact: (
       <div>
         <h2>Cultural Impact of Hinduism</h2>
-        <p>Hinduism has had a profound influence on Indian art, literature, architecture, and philosophy...</p>
+        <p>Hinduism has had a profound influence on Indian art, literature, architecture, and philosophy, shaping the cultural landscape of India and beyond. Its concepts and rituals have been integrated into various aspects of life, from classical dance and music to festivals and culinary traditions.</p>
+        <p>The impact of Hindu philosophy can be seen in various movements around the world, promoting values of non-violence, tolerance, and respect for all living beings.</p>
       </div>
     )
   };
 
   return (
     <div className="container">
-      {/* Main Image and Overview Section */}
       <h1 className="heading">Origin Of Hinduism</h1>
 
       <div className="main-section">
         <div className="image-container">
-          <Image src="/img/kedarnath.jpg" alt="Hinduism" />
+          <Image src="/img/kedarnath.jpg" alt="Hinduism" width={250} height={330} />
         </div>
         <div className="overview">
           <h1>Origin of Hinduism</h1>
-          <p>Hinduism is one of the worlds most ancient religions...</p>
+          <p>Hinduism is one of the world's most ancient religions, with roots extending back to the Indus Valley civilization. Its practices and beliefs have evolved over thousands of years, influenced by various cultural and historical contexts.</p>
           <div className="overview-details">
             <ul>
               <li><strong>Belief System:</strong> Polytheistic</li>
@@ -90,7 +90,6 @@ const OriginOfHinduismPage = () => {
         </div>
       </div>
 
-      {/* Tabs Navigation */}
       <div className="tabs">
         <button className={`tab ${activeTab === 'about' ? 'active' : ''}`} onClick={() => setActiveTab('about')}>About Hinduism</button>
         <button className={`tab ${activeTab === 'history' ? 'active' : ''}`} onClick={() => setActiveTab('history')}>History</button>
@@ -100,7 +99,6 @@ const OriginOfHinduismPage = () => {
         <button className={`tab ${activeTab === 'culturalImpact' ? 'active' : ''}`} onClick={() => setActiveTab('culturalImpact')}>Cultural Impact</button>
       </div>
 
-      {/* Content Section */}
       <div className="content-section">
         {tabContent[activeTab]}
       </div>
