@@ -1,0 +1,21 @@
+[
+    {
+      "id": "1",
+      "name": "Swami Vivekananda",
+      "profileImage": "/images/swami.jpg",
+      "title": "The Monk Who Brought Hinduism to the West",
+      "description": "Swami Vivekananda was a key figure in introducing Indian philosophies to the Western world.",
+      "bio": "Swami Vivekananda, a disciple of Ramakrishna, is known for his iconic speech at the Parliament of the World's Religions in 1893...",
+      "highlights": ["Unity of Religions", "Vedanta Philosophy", "Youth Inspiration"]
+    },
+    {
+      "id": "2",
+      "name": "Adi Shankaracharya",
+      "profileImage": "/images/shankar.jpg",
+      "title": "Reviver of Hinduism in India",
+      "description": "Adi Shankaracharya was a philosopher and theologian who consolidated the doctrine of Advaita Vedanta.",
+      "bio": "Adi Shankaracharya founded four mathas (monasteries) that played a crucial role in the historical development of Hinduism...",
+      "highlights": ["Advaita Philosophy", "Revival of Hinduism"]
+    }
+  ]
+  
