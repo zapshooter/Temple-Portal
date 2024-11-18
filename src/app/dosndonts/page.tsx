@@ -5,7 +5,7 @@ const DosAndDontsPage = () => {
     <div className="container">
       {/* Header Section */}
       <header className="header">
-        <h1>Dos and Donts for Fasts (Vrats)</h1>
+        <h1>Dos and Don&apos;ts for Fasts (Vrats)</h1>
         <p>Guidelines for Observing Fasts in Hinduism</p>
       </header>
 
@@ -13,12 +13,12 @@ const DosAndDontsPage = () => {
       <section className="introduction">
         <h2>Introduction</h2>
         <p>
-          Fasting, or *Vrat*, is an integral part of Hindu spirituality and culture. Observed to seek blessings, spiritual growth, and self-discipline, vrats come with specific guidelines to enhance their sanctity and benefits. Here is a concise guide to the Dos and Donts to observe during fasts.
+          Fasting, or <em>Vrat</em>, is an integral part of Hindu spirituality and culture. Observed to seek blessings, spiritual growth, and self-discipline, vrats come with specific guidelines to enhance their sanctity and benefits. Here is a concise guide to the Dos and Don&apos;ts to observe during fasts.
         </p>
       </section>
 
       {/* Dos Section */}
-      <section className="dos">""
+      <section className="dos">
         <h2>Dos</h2>
         <ul>
           <li><strong>Purify the Mind and Body:</strong> Begin your fast with a pure heart and clean surroundings, taking a bath before sunrise.</li>
@@ -31,12 +31,12 @@ const DosAndDontsPage = () => {
 
       {/* Donts Section */}
       <section className="donts">
-        <h2>Donts</h2>
+        <h2>Don&apos;ts</h2>
         <ul>
           <li><strong>Avoid Anger and Negativity:</strong> Stay calm and avoid negative emotions like anger, jealousy, or greed during the fast.</li>
           <li><strong>Refrain from Non-Vegetarian Food:</strong> Avoid consuming meat, eggs, or other non-vegetarian items.</li>
           <li><strong>Limit Physical Exertion:</strong> Avoid heavy physical work or excessive exercise that can strain your body during the fast.</li>
-          <li><strong>Dont Overeat Post-Fast:</strong> Break your fast gradually with light meals to prevent indigestion or discomfort.</li>
+          <li><strong>Don&apos;t Overeat Post-Fast:</strong> Break your fast gradually with light meals to prevent indigestion or discomfort.</li>
           <li><strong>Avoid Addictions:</strong> Stay away from habits like smoking, alcohol, or unnecessary indulgences that detract from the sanctity of the fast.</li>
         </ul>
       </section>
@@ -45,7 +45,7 @@ const DosAndDontsPage = () => {
       <section className="conclusion">
         <h2>Conclusion</h2>
         <p>
-          Fasting is a sacred practice that connects you to the divine and helps purify the mind and body. By adhering to these Dos and Donts, you can make your fasts more meaningful and spiritually rewarding.
+          Fasting is a sacred practice that connects you to the divine and helps purify the mind and body. By adhering to these Dos and Don&apos;ts, you can make your fasts more meaningful and spiritually rewarding.
         </p>
       </section>
 
