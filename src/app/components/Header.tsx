@@ -72,7 +72,7 @@ const Header = () => {
 
 
                 <Link href="/origin-of-hinduism" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>
-      Origin of Hinduism
+            Hinduism & philosophy
     </Link>
 
     <Link href="/religious-texts" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>
@@ -80,12 +80,11 @@ const Header = () => {
     </Link>
 
                 <Link href="/temples" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>
-                    Top 100 Temples
+                Prominent Temples of India
                 </Link>
-                <Link href="/traveltips" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>
-                    Travel Tips
+                <Link href="/dosndonts" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>
+                Beliefs and festivals
                 </Link>
-                <a href="/kumbh-mela" className="hover:text-white md:hover:text-orange transition delay-200" onClick={toggleMenu}>Kumbh Mela</a>
             </section>
 
             {isMenuOpen ? 

@@ -1,63 +1,180 @@
 import Image from "next/image";
 
-const Category = () => {
-    interface Category {
-        img: string;
-        header: string;
-        subheader: string;
-      }
+const PortalHome = () => {
+    const sidebarLinks = [
+        "Introduction",
+        "Samhitas",
+        "Brahmanas",
+        "Aranyakas",
+        "Upanishads",
+        "Vedangas",
+        "Rituals",
+        "Upveda",
+        "Present Context",
+        "About Project",
+    ];
 
-      const category : Category[] = [
-        {
-            img: "/img/weather.png",
-            header: "Explore Temples",
-            subheader: "Visit and discover ancient, spiritual, and architectural wonders of religious significance.",
-        },
-        {
-            img: "/img/flight.png",
-            header: "Plan your Pilgrimage",
-            subheader: "Organize your sacred journey, choosing destinations, accommodations, rituals, and spiritual practices.",
-        },
-        {
-            img: "/img/event.png",
-            header: "Top Destinations",
-            subheader: "Connect and enrich your soul while learning sutras along the way.",
-        },
-        {
-            img: "/img/settings.png",
-            header: "Secret Places",
-            subheader: "Hidden or lesser-known sacred sites with unique spiritual significance and serene atmospheres.",
-        },
+    const usefulLinks = [
+        "Indira Gandhi National Centre for the Arts (IGNCA)",
+        "National Cultural Audiovisual Archives (NCAA)",
+        "National Mission for Manuscripts (NMM)",
+        "Aatmanirbhar Bharat Centre For Design (ABCD)",
+        "National Mission on Cultural Mapping (NMCM)",
+        "Ministry of Culture",
+        "Cultural Organizations",
+        "Centres of Vedic Learning",
+    ];
 
-      ]
+    const quotes = [
+        {
+            text: "The Divine forces do not help those who do not toil themselves.",
+            reference: "Vedamritabandavah",
+            author: "Prof. Shashiprabha Kumar",
+        },
+    ];
+
+    const newContent = [
+        "Vedic GPS",
+        "Ghana Patha of Select Mantras from Krishna Yajurveda",
+        "Creative Rendition of select Vedic Suktas",
+        "Taittiriya Brahmana",
+    ];
+
+    const otherLinks = [
+        "Tradition of Vedic chanting has been inscribed by UNESCO on the Representative List...",
+        "Video Clip Submitted to UNESCO",
+    ];
+
     return (
-        <main className="relative w-full py-[100px] px-[5%] grid grid-cols-1 gap-4" id="category">
-            <section className="flex flex-col items-center text-center gap-4">
-                <p className="text-[18px] text-litegrey font-bold special-font" data-aos="fade-down">Explore</p>
-                <h1 className="text-3xl md:text-5xl font-bold" data-aos="fade-down">Get in Touch with God</h1>
-            </section>
+        <main className="flex font-sans text-gray-800">
+            {/* Left Sidebar */}
+            <aside className="w-1/4 p-6 bg-[#FF9933] space-y-8">
+                <section className="p-4 bg-saffron-700 text-white rounded-lg">
+  <h3 className="text-lg font-bold bg-red-700 text-white p-1 text-center">Main Links</h3>
+  <nav className="flex flex-col space-y-2 mt-3 text-center">
+    {sidebarLinks.map((link, index) => (
+      <a 
+        href={`#${link.toLowerCase()}`} 
+        key={index} 
+        className="flex items-center text-md text-gray-900 hover:text-white transition-colors duration-200"
+      >
+        {/* Arrow bullet */}
+        <span className="mr-2 text-xl">➜</span> 
+        {/* Link text */}
+        {link}
+      </a>
+    ))}
+  </nav>
+</section>
 
-            <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center items-stretch gap-6 lg:gap-10 special-font">
-                {category.map((categories, index) =>
-                <div className="relative parent" key={index}>
-                    <div className="first-child relative flex flex-col items-center p-10 sm:p-4 xl:p-10 rounded-3xl gap-4 z-10 bg-white h-full">
-                        <div>
-                            <Image src={categories.img} width={100} height={100} alt="img"  data-aos="fade-down"/>
-                        </div>
 
-                        <div className="flex flex-col items-center text-center gap-4">
-                            <h2 className="text-[20px] text-litedark font-bold" data-aos="fade-down">{categories.header}</h2>
-                            <p className="text-[16px] text-litegrey" data-aos="fade-down">{categories.subheader}</p>
-                        </div>
-                    </div>
-                    <div className="second-child hidden p-6 lg:p-8 bg-green rounded-tl-3xl rounded-br-lg absolute bottom-[-18px] lg:bottom-[-25px] left-[-15px] lg:left-[-20px]"></div>
-                </div>
-                )}
-            </section>
+                <section>
+                    <h3 className="text-lg font-bold bg-red-700 text-white p-1 text-center">USEFUL LINKS</h3>
+                    <nav className="flex flex-col space-y-2">
+                        {usefulLinks.map((link, index) => (
+                            <a href={`#${link.toLowerCase()}`} key={index} className="text-md text-gray-900 hover:underline">
+                                {link}
+                            </a>
+                        ))}
+                    </nav>
+                </section>
+            </aside>
 
-            <Image src="/img/grid.png" width={100} height={100} alt="grid" className=" w-[18%] md:w-[8%] absolute top-[70px] right-5 lg:right-20"/>
-        </main>
-    );
+            {/* Main Content */}
+            <div className="flex-1 p-8 space-y-8">
+
+            <h1 className="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Vedic Puranas</h1>
+                {/* Vedic Introduction Section */}
+                <section className="space-y-3">
+                    <p className="text-lg leading-relaxed">
+                        The Vedas are the source of integral wisdom, science, tradition, and culture of a remarkable civilization.
+                        They are Oral compilations of distilled wisdom of cosmic knowledge survived from time immemorial. They are not
+                        only identified as scriptures but also as the fountainhead of Indian culture and human civilization.
+                    </p>
+                    <a href="#" className="text-red-600 font-semibold">Read More..</a>
+                </section>
+
+                {/* Video Section */}
+                <section className="flex justify-center">
+                    <video width="600" controls>
+                        <source src="/path/to/video.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+
+                {/* Further Description */}
+                <section className="space-y-3">
+                    <p className="leading-relaxed">
+                        The portal aims to communicate messages enshrined in Vedic knowledge for universal well-being.
+                        This portal will be a one-stop solution for the user who would like to search any information regarding
+                        the Vedic heritage, be it the abstract oral traditions, or the textual tradition in the form of publications,
+                        manuscripts, implements, or Yajna related objects.
+                    </p>
+                </section>
+            </div>
+
+            {/* Right Sidebar */}
+            <aside className="w-1/4 p-6 bg-[#FF9933] space-y-8">
+                <section>
+                    <h3 className="text-lg font-bold bg-red-700 text-white p-1">VEDIC QUOTE OF THE DAY</h3>
+                    {quotes.map((quote, index) => (
+                        <blockquote key={index} className="text-gray-900 italic border-l-4 border-gray-600 pl-4 py-2">
+                            “{quote.text}”
+                            <cite className="block font-semibold">- {quote.reference}, {quote.author}</cite>
+                        </blockquote>
+                    ))}
+                </section>
+
+                <section className="p-4 bg-saffron-700 text-white rounded-lg overflow-hidden">
+  <h3 className="text-lg font-bold bg-red-700 text-white p-1 text-center">NEW CONTENT</h3>
+  
+  {/* Scrolling container */}
+  <div className="overflow-hidden relative h-40 mt-3">
+    <nav 
+      className="flex flex-col space-y-2 absolute animate-scroll" 
+      style={{ animationDuration: "10s", animationIterationCount: "infinite" }}
+    >
+      {newContent.map((content, index) => (
+        <a href="#" key={index} className="text-md text-gray-900 hover:text-white transition-colors duration-200">
+          {content}
+        </a>
+      ))}
+    </nav>
+  </div>
+</section>
+
+                <section>
+                    <h3 className="text-lg font-bold bg-red-700 text-white p-1">OTHER LINKS</h3>
+                    <nav className="flex flex-col space-y-2">
+                        {otherLinks.map((link, index) => (
+                            <a href="#" key={index} className="text-md text-gray-900 hover:underline">
+                                {link}
+                            </a>
+                        ))}
+                    </nav>
+                </section>
+            </aside>
+
+
+            <style jsx>{`
+            @keyframes scroll {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
-export default Category;
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
+
+            `}
+
+            </style>
+        </main>
+    );
+};
+
+export default PortalHome;

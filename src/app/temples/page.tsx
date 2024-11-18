@@ -47,6 +47,7 @@ const TemplesPage = () => {
           flex-direction: column;
           align-items: center;
           text-align: center;
+          font-family: sans-serif;
         }
         h1 {
           text-align: center;

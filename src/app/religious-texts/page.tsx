@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Subscribe from "../components/Subscribe";
 
 const ReligiousTextsPage = () => {
   return (
@@ -65,16 +66,19 @@ const ReligiousTextsPage = () => {
       <section className="gallery">
         <h2>Gallery</h2>
         <div className="image-grid">
-          <Image src="/img/text1.jpg" alt="Kumbh Mela Scene" />
-          <Image src="/img/text2.jpg" alt="Holy Dip at Kumbh Mela" />
-          <Image src="/img/text3.jpg" alt="Procession of Saints" />
+          <Image src="/img/text1.jpg" alt="Kumbh Mela Scene" width={250} height={330}/>
+          <Image src="/img/text2.jpg" alt="Holy Dip at Kumbh Mela" width={250} height={330}/>
+          <Image src="/img/text3.jpg" alt="Procession of Saints" width={250} height={330}/>
         </div>
       </section>
+
+
+      <Subscribe />
 
       {/* Inline CSS Styling */}
       <style jsx>{`
         .container {
-          font-family: 'Georgia', serif;
+          font-family: sans-serif;
           color: #4a2c00;
           padding: 20px;
           background-color: #f9f3e7;
@@ -114,6 +118,7 @@ const ReligiousTextsPage = () => {
           padding: 15px;
           border-radius: 8px;
           margin-bottom: 20px;
+          text-align: center;
         }
 
         .text h3 {
